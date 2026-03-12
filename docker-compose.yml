@@ -16,9 +16,9 @@ services:
     restart: unless-stopped
 
   mongo:
-    image: mongo:7-alpine
+    image: mongo:latest
     container_name: bookbik-mongo
-    ports:latest
+    ports:
       - "27017:27017"
     environment:
       MONGO_INITDB_DATABASE: bookbik
